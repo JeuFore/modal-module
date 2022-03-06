@@ -101,7 +101,7 @@
                     ref="primaryAction"
                     class="flex w-full rounded-md shadow-sm sm:ml-3 sm:w-auto justify-center"
                     :theme="primaryAction.theme"
-                    @click.native="primaryAction.handler ? primaryAction.handler() : () => {}"
+                    @click.native="destroy(primaryAction.action)"
                   >
                     {{ primaryAction.label }}
                   </push-button>
@@ -110,7 +110,7 @@
                     ref="closeAction"
                     class="mt-3 flex w-full rounded-md shadow-sm sm:mt-0 sm:w-auto justify-center"
                     :theme="closeAction.theme || 'white'"
-                    @click.native="destroy()"
+                    @click.native="destroy(closeAction.action)"
                   >
                     {{ closeAction.label || closeAction }}
                   </push-button>
@@ -189,9 +189,9 @@ export default {
     document.body.style.overflow = "";
   },
   methods: {
-    destroy() {
+    destroy(handler = () => {}) {
       this.active = false;
-      if (this.closeAction?.handler) this.closeAction.handler();
+      handler();
       setTimeout(() => {
         this.closeModal();
       }, 200);
