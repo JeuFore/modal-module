@@ -79,3 +79,6 @@ sw.*
 
 # Vim swap files
 *.swp
+
+# npm publish config
+.npmrc

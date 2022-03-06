@@ -1,5 +1,5 @@
 {
-  "name": "modal-module",
+  "name": "@jeufore/modal-module",
   "version": "0.0.1",
   "description": "Modal for Nuxt modules",
   "main": "index.js",
@@ -9,9 +9,6 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/JeuFore/modal-module.git"
-  },
-  "publishConfig": {
-    "@JeuFore:registry": "https://npm.pkg.github.com"
   },
   "files": [
     "modal-manager.js",
