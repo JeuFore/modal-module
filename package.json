@@ -10,6 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/JeuFore/modal-module.git"
   },
+  "publishConfig": {
+    "@JeuFore:registry": "https://npm.pkg.github.com"
+  },
   "files": [
     "modal-manager.js",
     "props.js",
