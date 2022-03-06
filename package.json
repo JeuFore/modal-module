@@ -1,0 +1,33 @@
+{
+  "name": "modal-module",
+  "version": "0.0.1",
+  "description": "Modal for Nuxt modules",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JeuFore/modal-module.git"
+  },
+  "files": [
+    "modal-manager.js",
+    "props.js",
+    "constants.js"
+  ],
+  "keywords": [
+    "modal",
+    "module",
+    "nuxt"
+  ],
+  "author": "JeuFore",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JeuFore/modal-module/issues"
+  },
+  "homepage": "https://github.com/JeuFore/modal-module#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^16.2.1",
+    "@commitlint/config-conventional": "^16.2.1"
+  }
+}
