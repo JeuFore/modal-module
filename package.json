@@ -11,9 +11,9 @@
     "url": "git+https://github.com/JeuFore/modal-module.git"
   },
   "files": [
-    "modal-manager.js",
-    "props.js",
-    "constants.js"
+    "index.js",
+    "src/*.js",
+    "src/components/*.vue"
   ],
   "keywords": [
     "modal",
