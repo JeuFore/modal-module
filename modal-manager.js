@@ -1,7 +1,7 @@
 import Vue from 'vue'
-import ModalProps from '~/modules/modal-module/props';
-import ModalComponent from '~/modules/modal-module/modal.vue';
-import constants from '~/modules/modal-module/constants';
+import ModalProps from 'modal-module/props';
+import ModalComponent from 'modal-module/modal.vue';
+import constants from 'modal-module/constants';
 
 const globalProps = {}
 const ModalDirectiveManager = {}
