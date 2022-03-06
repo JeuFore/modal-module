@@ -1,12 +1,12 @@
 import Vue from 'vue'
-import ModalProps from 'modal-module/props';
-import ModalComponent from 'modal-module/modal.vue';
-import constants from 'modal-module/constants';
+import ModalComponent from '@jeufore/modal-module/src/components/modal.vue';
+import ModalProps from '@jeufore/modal-module/src/props';
+import constants from '@jeufore/modal-module/src/constants';
 
 const globalProps = {}
 const ModalDirectiveManager = {}
 
-const globalClassNames = <%= serializeFunction(options.classNames) %>;
+const globalClassNames = <%= serializeFunction(options.classNames || {}) %>;
 
 if (globalClassNames)
     Object.entries(globalClassNames).forEach(([key, value]) => {
