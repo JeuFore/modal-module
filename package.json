@@ -28,6 +28,6 @@
   "homepage": "https://github.com/JeuFore/modal-module#readme",
   "devDependencies": {
     "@commitlint/cli": "^17.4.2",
-    "@commitlint/config-conventional": "^17.4.2"
+    "@commitlint/config-conventional": "^17.6.1"
   }
 }
